@@ -6,15 +6,15 @@
 		<title>e-Agenda - Login</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
-	<body class="bg-dark">
-		<div class="container">
+	<body  class="bg-dark">
+		<div class="container"> 
+		
 			<div class="card card-login mx-auto mt-5" style="width: 500px;">
-				<img class="card-img-top" src="img/security.png" alt="Card image cap">
-				<div class="card-body">
-					<h1>Login</h1>
+				<div class="card-header">
+					<h1><img src="img/cadeado2.png" style="height: 48px;">Login</h1>
 					<h5>Agenda Eletrônica</h5>
-					<hr>
-					<br>
+				</div>
+				<div class="card-body">
 					<form method="get" action="resultado.jsp">
 						<div class="form-group">
 							<label for="email">E-mail:</label>
@@ -25,10 +25,9 @@
 							<input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua senha" />
 						</div>
 						<div class="form-group">
-							<div class="form-check">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input">
-									Lembrar minha senha.
+							<div>
+								<label>
+									Seus dados de autenticação não devem ser revelados a outros usuários.
 								</label>
 							</div>
 						</div>
@@ -37,6 +36,9 @@
 							<a href="#" class="d-block mt-3">Criar uma conta</a>
 						</div>
 					</form>
+				</div>
+				<div class="card-footer text-center">
+					Desenvolvido por <a href="#">CelSoft</a>
 				</div>
 			</div>
 		</div>
