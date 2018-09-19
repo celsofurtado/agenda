@@ -2,59 +2,85 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Novo usuário</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
-	<div class="fluid bg-primary text-white p-1 mb-3">
-		<div class="container"><h1>Agenda Eletrônica</h1></div>
+<body class="bg-dark">
+	<div class="fluid bg-info text-white p-1 mb-3 p-2">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-1"><img src="img/agenda64.png"></div>
+				<div class="col-md-11"><h1>Agenda Eletrônica</h1><h6 class="font-weight-normal">Contatos e compromissos</h6></div>
+			</div>
+		</div>
 	</div>
-	<div class="container">
+	<div class="container mt-5" style="width: 900px;">
+	<form>
 		<div class="card">
 			<div class="card-header">
 				<div class="row align-items-center text-primary">
-					<div class="col-1"><img src="img/user_add48.png"></div>
-					<div class="col-11"><h4>Cadastrar novo usuário</h4></div>
+					<div class="col-md-1">
+						<img src="img/user_add48.png">
+					</div>
+					<div class="col-md-11">
+						<h4 class="font-weight-bold">Cadastrar novo usuário</h4>
+					</div>
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				
 					<div class="form-group">
-						<fieldset>
-						<legend>Dados do usuário:</legend>
-						<div class="row">
-							<div class="col-6">
-								<label for="txtNome">Nome:</label>
-								<input type="text" class="form-control" name="txtNome" id="txtNome">
+						<fieldset class="form-group">
+							<legend class="text-primary">
+								<h5>Dados gerais:</h5>
+							</legend>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="txtNome">Nome:</label> <input type="text"
+										class="form-control" name="txtNome" id="txtNome">
+								</div>
+								<div class="col-md-3">
+									<label for="txtDtNascimento">Dt. Nascimento:</label> <input
+										type="date" class="form-control" name="txtDtNascimento"
+										id="txtDtNascimento">
+								</div>
+								<div class="col-md-3">
+									<label for="cbSexo">Sexo:</label> <select class="form-control"
+										name="cbSexo" id="cbSexo">
+										<option>Selecione...</option>
+										<option>Feminino</option>
+										<option>Masculino</option>
+									</select>
+								</div>
 							</div>
-							<div class="col-6">
-								<label for="txtEmail">Email:</label>
-								<input type="text" class="form-control" name="txtEmail" id="txtEmail">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-4">
-								<label for="txtNome">Nome:</label>
-								<input type="text" class="form-control" name="txtNome">
-							</div>
-							<div class="col-4">
-								<label for="txtEmail">Email:</label>
-								<input type="text" class="form-control" name="txtEmail">
-							</div>
-							<div class="col-4">
-								<label for="txtEmail">Email:</label>
-								<input type="text" class="form-control" name="txtEmail">
-							</div>
-						</div>
-						
 						</fieldset>
 						
+						<fieldset class="form-group">
+							<legend class="text-primary">
+								<h5>Dados de acesso:</h5>
+							</legend>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="txtEmail">E-mail:</label>
+									<input type="email" class="form-control" name="txtEmail" id="txtEmail">
+								</div>
+								<div class="col-md-3">
+									<label for="txtSenha">Senha:</label>
+									<input	type="password" class="form-control" name="txtSenha" id="txtSenha">
+								</div>
+								<div class="col-md-3">
+									<label for="txtSenha2">Repetir senha:</label>
+									<input	type="password" class="form-control" name="txtSenha2" id="txtSenha2">
+								</div>
+							</div>
+						</fieldset>
 					</div>
 				
-				
-				</form>
 			</div>
+			<div class="card-footer text-right"><input type="submit" value="Criar usuário" class="btn btn-success" name="btnEnviar" id="btnEnviar">
+								<a href="login.html" class="btn btn-danger">Cancelar</a></div>
 		</div>
+		</form>
 	</div>
 </body>
 </html>
