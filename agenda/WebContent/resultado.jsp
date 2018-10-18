@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html> 
@@ -8,6 +9,7 @@
 </head>  
 <body> 
 	<h2>
+		Data: <%= new Date() %><br>
 		E-mail: <%= request.getParameter("email") %><br>
 		Senha: 	<%= request.getParameter("senha") %>
 	</h2>
